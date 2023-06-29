@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso trabalho</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+        
+html{
+    scroll-behavior: smooth;
+}
+        
+    /* reset */
+        
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0%;
+    border: 0;
+}
+        
+a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+        
+.cabecalho{
+    background-color: #4a154b;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+        
+#inicio1{
+    color: snow;
+    font-family: 'Geologica', sans-serif;
+    font-size: 17px;
+}
+        
+.img1{
+    width: 30px;
+    margin-right: 40px;
+}
+        
+.img1:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+        
+.img1:not(:hover){
+    transform: scale(1);
+    transition: 0.3s;
+}
+        
+.cabecalho2{
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    box-shadow: 0 3px 5px 0 rgba(33,51,67,0.12);
+}
+        
+.a1{
+    color: #4a154b;
+    font-size: 16px;
+}
+        
+.a1:hover{
+    transition: 0.3s;
+    transform: scale(1.05); 
+}
+
+    /* seção das aulas de musica */
+.musica{
+    background-image: url(./css/img/fundoMusica.png);
+    background-size: cover;
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-musica{
+    width: 640px;
+    margin-right: 140px;
+    margin: -30px 0px 0px 30px;
+}
+
+#t-musica{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2e475d;
+    padding: 0 0 20px 0;
+    font-size: 27px;
+    text-align: center;
+}
+
+#p-musica{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.galeria-musica{
+    background-color: #e6c619;
+    height: 600px;
+}
+
+#t-galeria-musica{
+    font-family: 'Lexend Deca', sans-serif;
+    color: snow;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.conteiner-musica{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imgs{
+    width: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+    /* seção das aulas de karate */
+
+.karate{
+    background-image: url(./css/img/fundoKarate.png);
+    background-size: cover;
+    height: 580px;
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+}
+
+.conteudo-karate{
+    width: 640px;
+    margin-right: 140px;
+    margin: -60px 50px 0px 0px;
+}
+
+#t-karate{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2e475d;
+    padding: 0 0 20px 0;
+    font-size: 27px;
+    text-align: center;
+}
+
+#p-karate{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.galeria-karate{
+    background-color: #e6c619;
+    height: 600px;
+}
+
+#t-galeria-karate{
+    font-family: 'Lexend Deca', sans-serif;
+    color: snow;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.conteiner-karate{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    /* seção das aulas de reforço */
+
+.reforco{
+    background-image: url(./css/img/fundoReforco.png);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    display: flex; 
+    align-items: center;
+    
+}
+
+.conteudo-reforco{
+    width: 640px;
+    margin-right: 140px;
+    margin: -30px 0px 0px 30px;
+}
+
+#t-reforco{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2e475d;
+    padding: 0 0 20px 0;
+    font-size: 27px;
+    text-align: center;
+}
+
+#p-reforco{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.galeria-reforco{
+    background-color: #e6c619;
+    height: 300px;
+}
+
+#t-galeria-reforco{
+    font-family: 'Lexend Deca', sans-serif;
+    color: snow;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.conteiner-reforco{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rodape{
+    background-color: #4a154b;
+    height: 400px;
+    display: flex;
+}
+
+.inf{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 352px;
+}
+
+.p-rodape{
+    font-family: 'Geologica', sans-serif;
+    color: snow;
+}
+
+.links{
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-footer{
+    color: snow;
+}
+
+.a-footer:hover{
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+.resto{
+    margin-left: 100px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.final{
+    background-color: #191c47;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    font-size: 12;
+    color: snow;
+}
+
+a#up{
+    background-color: white;
+    color: #4a154b;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+a#up:hover{
+    background-color: #ccc;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+a#up:not(:hover){
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- cabeçalho -->
+
+    <header class="cabecalho"><p id="inicio1" >Fone 11 2579-0244 / WhatsApp 11 94084-4660</p>
+        <a href="https://pt-br.facebook.com/AcaonavilaPirajussara/" target="_blank"><img class="img1" src="./css/img/facebook-logo.png" alt="logo-facebook"></a>
+    </header>
+
+    <!--Parte 2 do cabeçalho -->
+    
+    <header class="cabecalho2">
+        
+        <img style="width: 150px;" src="./css/img/logo-curta-removebg-preview.png" alt="logo da ong">
+
+        <a class="a1" href="index.html">INICIO</a>
+        <a class="a1" href="#linkmusica">MUSICA</a>
+        <a class="a1" href="#linkkarate">KARATÊ</a>
+        <a class="a1" href="#linkreforco">REFORÇO</a>
+        
+    </header>
+
+    <!-- seção da mostra das atividades de musica  -->
+
+    <section id="linkmusica" class="musica">
+        <div class="conteudo-musica">
+            <h2 id="t-musica">Aulas de música</h2>
+            <p id="p-musica">A música é uma linguagem universal que desperta emoções, estimula a criatividade e promove um senso de comunidade. Quando se trata do desenvolvimento das crianças, as aulas de música se revelam como uma atividade extracurricular valiosa, capaz de proporcionar uma série de benefícios fundamentais. <br><br>
+
+                Em primeiro lugar, as aulas de música contribuem para o desenvolvimento cognitivo das crianças. Estudos científicos têm demonstrado que a prática musical estimula áreas específicas do cérebro, aprimorando habilidades como a memória, a concentração e o raciocínio lógico. Além disso, aprender a tocar um instrumento ou cantar requer disciplina e dedicação, ensinando as crianças a estabelecer metas, persistir diante de desafios e desenvolver habilidades de resolução de problemas.</p>
+        </div>
+    </section>
+
+    <!-- galeria das fotos de musica  -->
+
+    <div class="galeria-musica">
+        <h1 id="t-galeria-musica">Galeria de Musica</h1>
+        <div class="conteiner-musica">
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/288450932_1132540283989842_2024032829089984650_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=da31f3&_nc_ohc=Amzl_BvB--EAX_zOzqM&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCBuPqo3B8pzRQMW5cOWv8QGyV8wwD2RrB5YD4UbONkgQ&oe=64A0704A" alt="alunos com violão">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280538534_1109226492987888_4219182693522694000_n.jpg?stp=c80.0.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=da31f3&_nc_ohc=J8F02qg7rsoAX_wWdDe&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfDkIFMW5o34Qy7fnJQp2fdgHrBo-XiOnOv9EsZRmTv6Nw&oe=649FBC38" alt="aluno tocando bateria">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280638325_1109226316321239_8649636101869115022_n.jpg?stp=c80.0.206.206a_dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_ohc=DG_vFAZz5lIAX9lm1kI&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCLFhfIF9-PYcTERD0b9Zi9GFX6h8dLY20Q64RinaWwtQ&oe=64A057A8" alt="professor ensinando a tocar violão">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/276991448_1077060882871116_1715731649619603343_n.jpg?stp=c0.72.206.206a_dst-jpg_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=da31f3&_nc_ohc=Q_pQ-fKWfr0AX-9Su40&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfClviqMNRDlIXCkHBu2pkvk-G7Du72RP3_Ic8yCZHnYFA&oe=649F1AE3" alt="aluno tocando bateria">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/276256380_1077060976204440_8936968774798651006_n.jpg?stp=c109.0.206.206a_dst-jpg_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=da31f3&_nc_ohc=5TLOqTGVEwQAX8YD7nU&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfBkvjJC8EfmAcDBDIsl8whZEg3goxWxhVxcqJtw7fKg3A&oe=649F87A1" alt="professor ensinando a tocar bateria">
+            
+            <img class="imgs" src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/280572489_1109226446321226_6084376510713520203_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=D0nsFzganDgAX_ZCmg_&_nc_ht=scontent-gru1-1.xx&oh=00_AfClgaQsGVSEGI96kiBsGKU-VR0kKHerxg9ZJK3MLmRxjw&oe=64A03ECB" alt="">
+            
+            <img class="imgs" src="https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/280619420_1109226419654562_6440451059872661736_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=ojOOVzB6WI8AX_Vhtlx&_nc_ht=scontent-gru2-1.xx&oh=00_AfDWPUdeaMXdGO6jKlIRegvxcdPLRTGwN248djTQp74h2Q&oe=64A12A6A" alt="">
+        </div>
+    </div><br><br>
+
+    <!-- seção da mostra das atividades de karate -->
+
+    <section id="linkkarate" class="karate">
+        <div class="conteudo-karate">
+            <h2 id="t-karate">Aulas de karatê</h2>
+            <p id="p-karate">As artes marciais têm uma história rica e profunda, enraizada em culturas antigas que valorizam a disciplina, o respeito e o autoaperfeiçoamento. Quando se trata do desenvolvimento das crianças, as aulas de artes marciais surgem como uma atividade extracurricular significativa, capaz de proporcionar uma série de benefícios fundamentais. <br><br>
+    
+                Em primeiro lugar, as aulas de artes marciais contribuem para o desenvolvimento físico das crianças. A prática regular dessas atividades ajuda a melhorar a coordenação motora, o equilíbrio, a flexibilidade e a força muscular. Além disso, as artes marciais incentivam a adoção de um estilo de vida ativo, contribuindo para a saúde geral e prevenindo problemas relacionados ao sedentarismo.</p>
+        </div>
+    </section>
+
+    <!-- galeria de karatê -->
+
+    <div class="galeria-karate">
+        <h1 id="t-galeria-karate">Galeria de Karatê</h1>
+        <div class="conteiner-karate">
+            <img class="imgs" src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/277305589_1081427202434484_7067665513080404680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9aJDIr2RUMQAX-tyO-o&_nc_oc=AQm8Y5SjAz6PCE5sC_yxzOQmznFQc-SPuotF0kMHDVyJw6CVoMpoZEsoS6U58cFBFhs&_nc_ht=scontent-gru2-2.xx&oh=00_AfAGZRAVqN-pD4kxSkKVfSVB9EktLMr_906Y91vYNHlTcg&oe=64A0A2B0" alt="">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/277523531_1081427519101119_1505221652805449069_n.jpg?stp=c0.72.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=vH40bmmFOtQAX_P9dcM&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCEFDqo9BSYt_dtYwocpqaX3Sbv3VZeQoNryw2CNSJBog&oe=649EF3F5" alt="alunos executando movimentos">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280545351_1109225869654617_3290535853451155213_n.jpg?stp=c126.0.206.206a_dst-jpg_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=da31f3&_nc_ohc=o5XPvqw_ej0AX-xuRZA&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfALjc0NgVml-i3I7OAO4xWVKU-xB98XQakRCeTU9pxnPQ&oe=649F783A" alt="alunos de kimono">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/277524526_1081427455767792_3267145073597681157_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=kJUcw96AlDYAX9QdGzr&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCEvTYX3v-quPUfbJ2HCLfubtyCTtm4QXvbiPJmk20c-g&oe=64A014FA" alt="alunos começando a aula">   
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/277464751_1081427422434462_856810883322062379_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=N8iJJp9H4SQAX_-ipC7&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCG94lZ8nePmwEPzmax1pSemjZpOvPljbCMM4BI7imJgA&oe=64A0357D" alt="alunos executando movimentos">
+            
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280471862_1109225829654621_6217804628088459051_n.jpg?stp=c126.0.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=o1KpRcdaFUsAX-XwqJO&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfBjHt3aYmNIykoCko_UA54nnFTvFl6JQeVDyYooRiB_aQ&oe=649FBBCA" alt="alunos executando movimentos">
+        </div>
+    </div>
+
+    <!-- seção da mostra das atividades de reforço -->
+
+    <section id="linkreforco" class="reforco">
+        <div class="conteudo-reforco">
+            <h2 id="t-reforco">Aulas de reforço</h2>
+            <p id="p-reforco">As aulas de reforço são uma atividade extracurricular fundamental para auxiliar as crianças em seu processo de aprendizagem e promover um desenvolvimento acadêmico sólido. Elas oferecem suporte individualizado e direcionado, possibilitando que as crianças fortaleçam suas habilidades e superem dificuldades específicas. <br><br>
+    
+                Em primeiro lugar, as aulas de reforço contribuem para o desenvolvimento cognitivo das crianças. Ao oferecer uma abordagem personalizada e adaptada às necessidades de cada aluno, essas aulas proporcionam a oportunidade de consolidar conceitos, revisar conteúdos e preencher lacunas de conhecimento. Isso fortalece as bases acadêmicas, melhora a compreensão dos temas estudados e aumenta a confiança dos alunos em sua capacidade de aprender e progredir.</p>
+        </div>
+    </section>
+
+    <!-- galeria das aulas de reforço -->
+
+    <div class="galeria-reforco">
+        <h1 id="t-galeria-reforco">Galeria das aulas de Reforço</h1>
+        <div class="conteiner-reforco">
+            <img src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280572001_1109226532987884_4957045130059586539_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=7iAMXTeY5kYAX99v9ev&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfD9wM0REhdq3qnkgJxi5Ewx_jq8rSpQ8YHVQ8x9y4Ou8A&oe=649F64F3" alt="alunos tendo aula">
+            
+            <img src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280557636_1109226569654547_2484394464971101688_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=CXUigJvKfH4AX-S31yG&_nc_oc=AQmosAlmXclFAxnhAp7U-fmzkyIbH5lP-u7-9D0jssnoBOg9M4oV-VBM3GKjSgNOIsE&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfA1WL-HC7EoDjVbaEMpbjZFCiZ9duOTr9eytAAeFtElgA&oe=649FC375" alt="alunos tendo aula">
+            
+            <img src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/288641267_1132540123989858_8775812944179038438_n.jpg?stp=c0.72.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=kKSxA6-a-Q4AX9KutyX&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCj3rwuenQaFn8orlintPdfqK-7P4jzyvO1DOXD8TnlMA&oe=64A08390" alt="alunos praticando uma atividade interativa">
+        </div>
+    </div>
+
+    <!-- rodapé -->
+
+    <footer class="rodape">
+
+        <div class="inf">
+        <img id="" style="width: 100px; border-radius: 50%; background-color: white;" src="./css/img/logo-ofc.png" alt="logo da ong">
+    
+        
+        <p class="p-rodape">E-mail: ipivilasonia@gmail.com</p>
+    
+        <p class="p-rodape">Fone 11 2579-0244</p>
+    
+        <p class="p-rodape">WhatsApp 11 94084-4660</p>
+        
+        <a target="_blank" class="" href="https://pt-br.facebook.com/AcaonavilaPirajussara/"><img class="img1" src="./css/img/facebook-logo.png" alt=""></a></div>
+    
+        <div class="links">
+        <a class="a-footer" href="index.html">Início</a>
+        <a class="a-footer" href="sobrenos.html">Sobre nós</a>
+        <a class="a-footer" href="#inicio1">Demostração do trabalho</a>
+        <a class="a-footer" href="doacao.html">Como ajudar</a></div>
+    
+        <div class="resto">
+        <h3 style="color: snow; font-family: 'Geologica', sans-serif; font-size: 22px;">Endereço</h3>
+        <p class="p-rodape">Av.Jacarandá, 190, Taboão da Serra, SP, Brazil, CEP: 006774-005</p>
+        <a id="up" href="#inicio1">↑</a>
+        </div>
+    
+    
+    
+    </footer>
+    
+    <footer class="final">
+        <p>2023 © Todos os direitos reservados. Instituto Jacarandá</p>
+    </footer>
+    
+</body>
+</html>

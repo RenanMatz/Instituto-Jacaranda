@@ -113,27 +113,29 @@ a{
 
 .galeria-musica{
     background-color: #e6c619;
-    height: 600px;
+    color: #222;
+    height: 95vh;
 }
 
-#t-galeria-musica{
+.galeria-musica h1{
     font-family: 'Lexend Deca', sans-serif;
-    color: snow;
     text-align: center;
     padding: 20px 0px;
 }
 
 .conteiner-musica{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 16px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2);
 }
 
 .imgs{
     width: 250px;
+    height: auto;
+    border-radius: 5px;
     object-fit: cover;
-    margin-bottom: 15px;
 }
 
     /* seção das aulas de karate */
@@ -171,21 +173,22 @@ a{
 
 .galeria-karate{
     background-color: #e6c619;
-    height: 600px;
+    height: 95vh;
 }
 
-#t-galeria-karate{
+.galeria-karate h1{
     font-family: 'Lexend Deca', sans-serif;
-    color: snow;
+    color: #222;
     text-align: center;
     padding: 20px 0px;
 }
 
 .conteiner-karate{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 16px;
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2);
 }
 
     /* seção das aulas de reforço */
@@ -224,12 +227,12 @@ a{
 
 .galeria-reforco{
     background-color: #e6c619;
-    height: 300px;
+    height: 55vh;
 }
 
 #t-galeria-reforco{
     font-family: 'Lexend Deca', sans-serif;
-    color: snow;
+    color: #222;
     text-align: center;
     padding: 20px 0px;
 }
@@ -374,7 +377,7 @@ a#up:not(:hover){
             
             <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/276256380_1077060976204440_8936968774798651006_n.jpg?stp=c109.0.206.206a_dst-jpg_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=da31f3&_nc_ohc=5TLOqTGVEwQAX8YD7nU&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfBkvjJC8EfmAcDBDIsl8whZEg3goxWxhVxcqJtw7fKg3A&oe=649F87A1" alt="professor ensinando a tocar bateria">
             
-            <img class="imgs" src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/280572489_1109226446321226_6084376510713520203_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=D0nsFzganDgAX_ZCmg_&_nc_ht=scontent-gru1-1.xx&oh=00_AfClgaQsGVSEGI96kiBsGKU-VR0kKHerxg9ZJK3MLmRxjw&oe=64A03ECB" alt="">
+            <img style="height: 250px;" class="imgs" src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/280572489_1109226446321226_6084376510713520203_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=D0nsFzganDgAX_ZCmg_&_nc_ht=scontent-gru1-1.xx&oh=00_AfClgaQsGVSEGI96kiBsGKU-VR0kKHerxg9ZJK3MLmRxjw&oe=64A03ECB" alt="">
             
             <img class="imgs" src="https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/280619420_1109226419654562_6440451059872661736_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=ojOOVzB6WI8AX_Vhtlx&_nc_ht=scontent-gru2-1.xx&oh=00_AfDWPUdeaMXdGO6jKlIRegvxcdPLRTGwN248djTQp74h2Q&oe=64A12A6A" alt="">
         </div>
@@ -396,7 +399,7 @@ a#up:not(:hover){
     <div class="galeria-karate">
         <h1 id="t-galeria-karate">Galeria de Karatê</h1>
         <div class="conteiner-karate">
-            <img class="imgs" src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/277305589_1081427202434484_7067665513080404680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9aJDIr2RUMQAX-tyO-o&_nc_oc=AQm8Y5SjAz6PCE5sC_yxzOQmznFQc-SPuotF0kMHDVyJw6CVoMpoZEsoS6U58cFBFhs&_nc_ht=scontent-gru2-2.xx&oh=00_AfAGZRAVqN-pD4kxSkKVfSVB9EktLMr_906Y91vYNHlTcg&oe=64A0A2B0" alt="">
+            <img style="height: 250px;" class="imgs" src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/277305589_1081427202434484_7067665513080404680_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9aJDIr2RUMQAX-tyO-o&_nc_oc=AQm8Y5SjAz6PCE5sC_yxzOQmznFQc-SPuotF0kMHDVyJw6CVoMpoZEsoS6U58cFBFhs&_nc_ht=scontent-gru2-2.xx&oh=00_AfAGZRAVqN-pD4kxSkKVfSVB9EktLMr_906Y91vYNHlTcg&oe=64A0A2B0" alt="">
             
             <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/277523531_1081427519101119_1505221652805449069_n.jpg?stp=c0.72.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=vH40bmmFOtQAX_P9dcM&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCEFDqo9BSYt_dtYwocpqaX3Sbv3VZeQoNryw2CNSJBog&oe=649EF3F5" alt="alunos executando movimentos">
             
@@ -426,11 +429,11 @@ a#up:not(:hover){
     <div class="galeria-reforco">
         <h1 id="t-galeria-reforco">Galeria das aulas de Reforço</h1>
         <div class="conteiner-reforco">
-            <img src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280572001_1109226532987884_4957045130059586539_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=7iAMXTeY5kYAX99v9ev&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfD9wM0REhdq3qnkgJxi5Ewx_jq8rSpQ8YHVQ8x9y4Ou8A&oe=649F64F3" alt="alunos tendo aula">
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280572001_1109226532987884_4957045130059586539_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=7iAMXTeY5kYAX99v9ev&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfD9wM0REhdq3qnkgJxi5Ewx_jq8rSpQ8YHVQ8x9y4Ou8A&oe=649F64F3" alt="alunos tendo aula">
             
-            <img src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280557636_1109226569654547_2484394464971101688_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=CXUigJvKfH4AX-S31yG&_nc_oc=AQmosAlmXclFAxnhAp7U-fmzkyIbH5lP-u7-9D0jssnoBOg9M4oV-VBM3GKjSgNOIsE&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfA1WL-HC7EoDjVbaEMpbjZFCiZ9duOTr9eytAAeFtElgA&oe=649FC375" alt="alunos tendo aula">
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/280557636_1109226569654547_2484394464971101688_n.jpg?stp=c0.53.206.206a_dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_ohc=CXUigJvKfH4AX-S31yG&_nc_oc=AQmosAlmXclFAxnhAp7U-fmzkyIbH5lP-u7-9D0jssnoBOg9M4oV-VBM3GKjSgNOIsE&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfA1WL-HC7EoDjVbaEMpbjZFCiZ9duOTr9eytAAeFtElgA&oe=649FC375" alt="alunos tendo aula">
             
-            <img src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/288641267_1132540123989858_8775812944179038438_n.jpg?stp=c0.72.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=kKSxA6-a-Q4AX9KutyX&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCj3rwuenQaFn8orlintPdfqK-7P4jzyvO1DOXD8TnlMA&oe=64A08390" alt="alunos praticando uma atividade interativa">
+            <img class="imgs" src="https://scontent.fcgh55-1.fna.fbcdn.net/v/t39.30808-6/288641267_1132540123989858_8775812944179038438_n.jpg?stp=c0.72.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_ohc=kKSxA6-a-Q4AX9KutyX&_nc_ht=scontent.fcgh55-1.fna&oh=00_AfCj3rwuenQaFn8orlintPdfqK-7P4jzyvO1DOXD8TnlMA&oe=64A08390" alt="alunos praticando uma atividade interativa">
         </div>
     </div>
 

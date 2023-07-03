@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* reset */
+
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0%;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.cabecalho{
+    background-color: #4a154b;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+#inicio1{
+    color: snow;
+    font-family: 'Geologica', sans-serif;
+    font-size: 17px;
+}
+
+.img1{
+    width: 30px;
+    margin-right: 40px;
+}
+
+.img1:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.img1:not(:hover){
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.cabecalho2{
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    box-shadow: 0 3px 5px 0 rgba(33,51,67,0.12);
+}
+
+.a1{
+    color: #4a154b;
+    font-size: 16px;
+}
+
+.a1:hover{
+    transition: 0.3s;
+    transform: scale(1.05);    
+}
+
+.pedido{
+    height: 497px;
+    background-color: #ccc;
+    display: flex;
+}
+
+.fundo-pedido{
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-pedido{
+    height: 350px;
+    width: 600px;
+    object-fit: cover;
+    margin: 50px 0px 0px 80px;
+}
+
+#p-pedido{
+    font-family: 'Lexend Deca', sans-serif;
+    max-width: 70%;
+    padding: 15px;
+    line-height: 1.3;
+    font-size: 16px;
+    margin-left: 73px;
+}
+
+.position{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.contact-box{
+    width: 500px;
+    height: 95%;
+    background-color: snow;
+    box-shadow: 2px 1px 4px black;
+    font-size: 17px;
+}
+
+.t-contact{
+    padding: 30px 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2e475d;
+}
+
+.p-contact{
+    padding: 10px 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.infs{
+    padding: 10px 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.7;
+}
+
+    </style>
+</head>
+<body>
+    <!-- cabeçalho -->
+
+    <header class="cabecalho"><p id="inicio1" >Fone 11 2579-0244 / WhatsApp 11 94084-4660</p>
+        <a href="https://pt-br.facebook.com/AcaonavilaPirajussara/" target="_blank"><img class="img1" src="./css/img/facebook-logo.png" alt="logo-facebook"></a>
+    </header>
+
+    <!--Parte 2 do cabeçalho -->
+    
+    <header class="cabecalho2">
+        
+        <img style="width: 110px; object-position: center;" src="./css/img/loguuuu.png" alt="logo da ong">
+
+        <a class="a1" href="index.html">INICIO</a>
+        <a class="a1" href="sobrenos.html">SOBRE NÓS</a>
+        <a class="a1" href="trabalho.html">NOSSO TRABALHO</a>
+        <a class="a1" href="#inicio1">COMO AJUDAR</a>
+        
+    </header>
+
+    <!-- pedido de doação (me senti pobre, mas é só a descrição dessa parte da página) -->
+
+    <section class="pedido">
+        <div class="fundo-pedido">
+            <img id="img-pedido" src="https://scontent.fcgh4-1.fna.fbcdn.net/v/t39.30808-6/280513793_1109226596321211_2500508783312791203_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG76dK91EorTIulebPn5gtfM9rwURj0XGQz2vBRGPRcZMxFR7kvslOJsuf24c_sn0chhYyFj0vn8-Jpcl6p2Q-q&_nc_ohc=7BujXH5t0NsAX85F0cz&_nc_zt=23&_nc_ht=scontent.fcgh4-1.fna&oh=00_AfABd79df1lhczrSe9tvRG53nImBpqj9AKZ9TbyhpnRbog&oe=64A23975" alt="">
+            <p id="p-pedido">Doe e nos ajude a continuar com a nossa missão, mudandno a realidade da comunidade através da educação  </p>
+        </div>
+        <div class="position">
+            <div class="contact-box">
+                <h2 class="t-contact">Formas de pagamento</h2>
+                <p class="p-contact">Chave pix: 11 97153-2491</p>
+                <!-- <h2 class="t-contact" >contatos para doação</h2>
+                <ul class="infs">
+                    <li>Telefone:(11) 2579-0244</li>
+                    <li>WhatsApp:(11) 94084-4660</li>
+                    <li>Gmail:ipivilasonia@gmail.com</li>
+                </ul> -->
+                <h1 class="t-contact">Venha ser um voluntário!</h1>
+                <p class="p-contact">Se você tem um tempo livre no seu dia a dia, por que não nos ajudar? Temos uma equipe solidária e comprometida com o objetivo de ajudar a comunidade, esse ato solidário ajudará a melhorar suas habilidades sociais e tudo isso enquanto você ajuda o proximo.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&display=swap');
+
+html{
+scroll-behavior: smooth;
+}
+
+/* reset */
+
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0%;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.cabecalho{
+    background-color: #4a154b;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+#inicio1{
+    color: snow;
+    font-family: 'Geologica', sans-serif;
+    font-size: 17px;
+}
+
+.img1{
+    width: 30px;
+    margin-right: 40px;
+}
+
+.img1:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.img1:not(:hover){
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.cabecalho2{
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    box-shadow: 0 3px 5px 0 rgba(33,51,67,0.12);
+}
+
+.a1{
+    color: #4a154b;
+    font-size: 16px;
+}
+
+.a1:hover{
+    transition: 0.3s;
+    transform: scale(1.05);   
+}
+
+.capa{
+    height: 590px;
+    background-image: url(./css/img/persona.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner{
+    margin-top: -100px;
+    max-width: 560px;
+    margin-left: 40px;
+    line-height: 1.3;
+}
+
+#t-help{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 48px;
+    color: #2e475d;
+}
+
+.missao{
+    background-image: url(./css/img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    display: flex;
+    justify-content: right;
+}
+
+.conteudo-missao{
+    max-width: 600px;
+    padding-right: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#t-missao{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2e475d;
+    padding: 0 0 20px 0;
+    font-size: 27px;
+}
+
+#p-missao{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.historia{
+    background-image: url(./css/img/2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-historia{
+    width: 640px;
+    margin-left: 50px;
+    text-indent: 40px;
+}
+
+#t-historia{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2e475d;
+    padding: 0 0 20px 0;
+    font-size: 27px;
+    text-align: center;
+}
+
+#p-historia{
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.rodape{
+    background-color: #4a154b;
+    height: 400px;
+    display: flex;
+}
+
+.inf{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 352px;
+}
+
+.p-rodape{
+    font-family: 'Geologica', sans-serif;
+    color: snow;
+}
+
+.links{
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-footer{
+    color: snow;
+}
+
+.a-footer:hover{
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+.resto{
+    margin-left: 100px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.final{
+    background-color: #191c47;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    font-size: 12;
+    color: snow;
+}
+
+a#up{
+    background-color: white;
+    color: #4a154b;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+a#up:hover{
+    background-color: #ccc;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+a#up:not(:hover){
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+    </style>
+    <title>Sobre nós</title>
+</head>
+<body>
+    <header class="cabecalho"><p id="inicio1" >Fone 11 2579-0244 / WhatsApp 11 94084-4660</p>
+        <a href="https://pt-br.facebook.com/AcaonavilaPirajussara/" target="_blank"><img class="img1" src="./css/img/facebook-logo.png" alt="logo-facebook"></a>
+    </header>
+
+    <!-- Parte 2 do cabeçalho -->
+    
+    <header class="cabecalho2">
+        
+        <img style="width: 110px; object-position: center;" src="./css/img/loguuuu.png" alt="logo da ong">
+
+        <a class="a1" href="index.html">INICIO</a>
+        <a class="a1" href="#missao2">MISSÃO</a>
+        <a class="a1" href="#historia2">HISTÓRIA</a>
+        
+    </header>
+
+    <section class="capa">
+        <div class="conteiner">
+            <h1 id="t-help">Ajudando dezenas de crianças a crescer melhor.</h1>
+        </div>
+    </section>
+
+    <section id="missao2" class="missao">
+        <div class="conteudo-missao">
+        <h1 id="t-missao">Nossa Missão</h1>
+        <p id="p-missao">Na nossa ONG, nossa missão é inspirar e capacitar indivíduos através da semeadura de sabedoria e conhecimento. Acreditamos que a educação é a base para a transformação social e buscamos promover o acesso igualitário a oportunidades educacionais de qualidade. <br><br>
+
+            Nosso objetivo é plantar as sementes do conhecimento em comunidades carentes, oferecendo programas educacionais abrangentes e recursos necessários para o desenvolvimento integral dos indivíduos. Buscamos despertar o potencial de cada pessoa, capacitando-as a superar desafios, alcançar seus sonhos e contribuir para um mundo melhor.</p>
+        </div>
+    </section>
+
+    <section id="historia2" class="historia">
+        <div class="conteudo-historia">
+            <h1 id="t-historia">Nossa história</h1>
+            <p id="p-historia"> No ano de 2017, a pedagoga Maria Gizélia teve uma visão e um sonho de trabalhar a transformação social por meio da educação, esporte e artes. E os sonho são como combustíveis do coração. Em junho de 2017, Gizélia encontrou o professor de Jiu-jitsu, Daniel Corrêa, morador da região com desejo de somar. O prédio não tinha condições de uso, mas através de parcerias Deus trouxe os recursos para que todas as reformas fosse realizadas. E, em agosto de 2017 o Instituto Jacarandá (antigo Projeto Ação na Vila) começou a funcionar com aulas de reforço escolar (português, matemática e religião), jiu-jitsu, Karatê e aulas de músicas.</p>
+        </div>
+    </section>
+
+    <footer class="rodape">
+
+        <div class="inf">
+        <img id="" style="width: 100px; border-radius: 50%; background-color: white;" src="./css/img/logooooo.png" alt="logo da ong">
+
+        
+        <p class="p-rodape">E-mail: ipivilasonia@gmail.com</p>
+
+        <p class="p-rodape">Fone 11 2579-0244</p>
+
+        <p class="p-rodape">WhatsApp 11 94084-4660</p>
+        
+        <a target="_blank" class="" href="https://pt-br.facebook.com/AcaonavilaPirajussara/"><img class="img1" src="./css/img/facebook-logo.png" alt=""></a></div>
+
+        <div class="links">
+        <a class="a-footer" href="index.html">Início</a>
+        <a class="a-footer" href="#inicio1">Sobre nós</a>
+        <a class="a-footer" href="trabalho.html">Demostração do trabalho</a>
+        <a class="a-footer" href="doacao.html">Como ajudar</a></div>
+
+        <div class="resto">
+        <h3 style="color: snow; font-family: 'Geologica', sans-serif; font-size: 22px;">Endereço</h3>
+        <p class="p-rodape">Av.Jacarandá, 190, Taboão da Serra, SP, Brazil, CEP: 006774-005</p>
+        <a id="up" href="#inicio1">↑</a>
+        </div>
+
+
+
+    </footer>
+
+    <footer class="final">
+        <p>2023 © Todos os direitos reservados. Instituto Jacarandá</p>
+    </footer>
+</body>
+</html>
